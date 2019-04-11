@@ -1,0 +1,51 @@
+header
+    display: flex
+    flex-direction: row
+    justify-content: space-between
+    align-items: center
+    height: 80px
+    padding: 0 32px
+
+.logo
+    color: $red
+    cursor: pointer
+    
+    &-title
+        +bold
+        font-size: 24px
+
+.menu
+    display: block
+
+nav
+    display: flex
+    flex-direction: column
+    justify-content: flex-start
+    align-items: center
+    background: $green
+    height: 100%
+    width: 100%
+    position: fixed
+    z-index: 99
+    transition: 0.4s
+    transform: translateX(100%)
+    padding: 32px 24px
+
+.nav-active
+    transition: 0.3s ease-in
+    transform: translateX(0%)
+
+.nav-items
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+
+    li
+        list-style: none
+        margin: 12px 0
+.nav-item
+    +bold
+    font-size: 32px
+    color: $white
+    text-decoration: none

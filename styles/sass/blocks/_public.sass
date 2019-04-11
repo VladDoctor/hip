@@ -1,0 +1,52 @@
+.public
+    display: flex
+    flex-direction: column
+    justify-content: flex-start
+    align-items: center
+
+    .title
+        +bold
+        font-size: 24px
+        line-height: 1
+
+    .search
+        margin: 24px 0 44px 0
+        
+.list-item
+    +shadow
+    +border
+    display: flex
+    justify-content: flex-start
+    align-items: center
+    background: $white
+    width: 480px
+    height: 80px
+    padding: 0 16px
+    margin: 22px 0
+    border-radius: 8px
+    cursor: pointer
+
+.list-item__img
+    background: $black url('/images/list/1.jpg')
+    background-position: center
+    background-size: cover
+    background-repeat: no-repeat
+    width: 60px
+    height: 60px
+    margin-right: 24px
+    border-radius: 4px
+
+.list-item__texts
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+    align-items: flex-start
+
+    &__title
+        +light
+        font-size: 20px
+        font-weight: 600
+
+.rating
+    width: 140px
+    height: 12px

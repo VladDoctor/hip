@@ -1,0 +1,28 @@
+// Colors
+$white: #ffffff
+$gray: rgba(249, 249, 249, 0.1)
+$dark: #f1f1f1
+$green: #43a047
+$red: #f9476c
+$black: #1c1c1c
+
+@mixin shadow
+    box-shadow: 3px 4px 12px rgba(120,120,120,0.1)
+@mixin inset-shadow
+    box-shadow: inset 0px -220px 60px -120px rgba(0,0,0,0.9)
+@mixin gradient
+    background-image: linear-gradient(to left top, #ee64f6, #ff65d2, #ff71b5, #ff829f, #ff9494)
+@mixin border
+    border: 2px solid #fefefe
+
+h1, h4
+    margin: 0 0
+    line-height: 1
+
+button
+    border: none
+    background: none
+    cursor: pointer
+    display: flex
+    justify-content: center
+    align-items: center

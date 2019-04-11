@@ -1,0 +1,26 @@
+@font-face {
+    font-family: 'Yandex Sans Text Light', sans-serif;
+    src: url('fonts\YandexSansText-Light.eot');
+    src: url('fonts\YandexSansText-Light.eot?#iefix') format('embedded-opentype'),
+    url('fonts\YandexSansText-Light.woff') format('woff'),
+    url('fonts\YandexSansText-Light.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Yandex Sans Text Regular', sans-serif;
+    src: url('fonts\YandexSansText-Regular.eot');
+    src: url('fonts\YandexSansText-Regular.eot?#iefix') format('embedded-opentype'),
+    url('fonts\YandexSansText-Regular.woff') format('woff'),
+    url('fonts\YandexSansText-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@mixin light {
+    font-family: "Yandex Sans Text Light", sans-serif;
+}
+@mixin bold {
+    font-family: "Yandex Sans Text Regular", sans-serif;
+}
